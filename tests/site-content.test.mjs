@@ -9,20 +9,27 @@ test("exports the academic profile for GitHub Pages", async () => {
 
   assert.match(html, /Shou-Tzu Han/);
   assert.match(html, /Trustworthy AI/);
-  assert.match(html, /Selected publications/);
+  assert.match(html, /Research Profile/);
+  assert.match(html, /Research Interests/);
+  assert.match(html, /Publications/);
+  assert.match(html, /Research Experiences/);
+  assert.match(html, /Research Projects/);
+  assert.match(html, /Technical Skills/);
   assert.match(html, /Wayne State University/);
   assert.match(html, /Boston University/);
   assert.match(html, /Soochow University/);
-  assert.match(html, /Exploring postdoctoral research beginning in 2028/);
-  assert.match(html, />Scholar/);
+  assert.match(html, /Seeking a research internship/);
+  assert.match(html, /github\.com\/shou-tzu-han/);
+  assert.match(html, /Google Scholar/);
   assert.match(html, />Résumé/);
   assert.match(html, />Email</);
-  assert.match(html, /hero-actions[\s\S]*Google Scholar[\s\S]*Email me/);
+  assert.match(html, /hero-actions[\s\S]*GitHub[\s\S]*Google Scholar[\s\S]*Email me/);
   assert.match(html, /Switch to dark theme/);
   assert.match(html, />Light</);
   assert.match(html, />Dark</);
   assert.doesNotMatch(html, /University of South Dakota/i);
-  assert.doesNotMatch(html, /teaching-focused opportunities/i);
+  assert.doesNotMatch(html, /github\.com\/52147/);
+  assert.doesNotMatch(html, /857[-)\s]/);
 
   await access(new URL("dist/client/og.png", root));
   await access(new URL("dist/client/Shou-Tzu-Han-Resume.pdf", root));

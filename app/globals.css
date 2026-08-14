@@ -2,30 +2,30 @@
 
 :root {
   --background: #ffffff;
-  --surface: #f7f8f7;
-  --text: #202725;
-  --muted: #66706c;
-  --border: #dde2df;
-  --accent: #365f62;
+  --surface: #f5f5f5;
+  --text: #222222;
+  --muted: #6b6b6b;
+  --border: #dedede;
+  --accent: #5f6368;
   --accent-contrast: #ffffff;
-  --copy: #3d4743;
-  --copy-soft: #48534f;
+  --copy: #3f3f3f;
+  --copy-soft: #4f4f4f;
   --header-background: rgba(255, 255, 255, 0.96);
   --max: 980px;
   color-scheme: light;
 }
 
 html[data-theme="dark"] {
-  --background: #141918;
-  --surface: #1d2422;
-  --text: #eef2f0;
-  --muted: #aab4b0;
-  --border: #35403d;
-  --accent: #91bbb7;
-  --accent-contrast: #10201e;
-  --copy: #d6ddda;
-  --copy-soft: #c1cbc7;
-  --header-background: rgba(20, 25, 24, 0.96);
+  --background: #151515;
+  --surface: #1f1f1f;
+  --text: #f1f1f1;
+  --muted: #aaaaaa;
+  --border: #3a3a3a;
+  --accent: #c1c4c7;
+  --accent-contrast: #171717;
+  --copy: #dedede;
+  --copy-soft: #c7c7c7;
+  --header-background: rgba(21, 21, 21, 0.96);
   color-scheme: dark;
 }
 
@@ -98,7 +98,7 @@ a {
 nav {
   display: flex;
   justify-content: flex-end;
-  gap: 18px;
+  gap: 12px;
   color: var(--muted);
   font-size: 13px;
   font-weight: 500;
@@ -187,6 +187,15 @@ nav a:focus-visible,
   font-weight: 650;
   letter-spacing: -0.045em;
   line-height: 1.05;
+}
+
+.alternate-name {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 0.38em;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .hero-statement {
@@ -278,6 +287,49 @@ nav a:focus-visible,
   line-height: 1.7;
 }
 
+.lead-copy {
+  max-width: 900px;
+  margin: 0;
+  color: var(--copy);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.interest-list,
+.skill-list {
+  border-top: 1px solid var(--border);
+}
+
+.interest-item,
+.skill-item {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.5fr);
+  gap: 36px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.interest-item h3,
+.interest-item p,
+.skill-item h3,
+.skill-item p {
+  margin: 0;
+}
+
+.interest-item h3,
+.skill-item h3 {
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.interest-item p,
+.skill-item p {
+  color: var(--copy-soft);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
 .publication-list {
   border-top: 1px solid var(--border);
 }
@@ -344,6 +396,88 @@ nav a:focus-visible,
   color: var(--accent);
   font-size: 15px;
   font-weight: 600;
+}
+
+.position {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.position-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.position-heading h3,
+.position-heading p {
+  margin: 0;
+}
+
+.position-heading h3 {
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+
+.position-heading p,
+.position-heading time {
+  font-size: 15px;
+}
+
+.position-heading time {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.position-heading .position-advisors {
+  margin-top: 5px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.detail-list {
+  margin: 18px 0 0;
+  padding-left: 23px;
+  color: var(--copy-soft);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.detail-list li + li {
+  margin-top: 7px;
+}
+
+.project-list {
+  border-top: 1px solid var(--border);
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-number {
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.project h3 {
+  max-width: 900px;
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.project h3 a:hover,
+.project h3 a:focus-visible {
+  color: var(--accent);
 }
 
 .education .section-heading {
@@ -533,9 +667,41 @@ footer {
     gap: 8px;
   }
 
+  .interest-item,
+  .skill-item {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .position-heading {
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .education-item time {
     grid-row: 1;
     justify-self: start;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 821px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
   }
 }
 

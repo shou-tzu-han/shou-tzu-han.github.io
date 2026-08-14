@@ -1,6 +1,6 @@
 # Shou-Tzu Han — Academic Profile
 
-A concise academic profile for postdoctoral research and teaching-focused opportunities. The site highlights work in trustworthy AI, LLM robustness, mechanistic interpretability, agentic retrieval, and human-centered AI.
+A concise academic profile for research internship and postdoctoral opportunities. The site highlights work in trustworthy AI, LLM robustness, mechanistic interpretability, agentic retrieval, and reliable AI systems.
 
 ## Local preview
 
