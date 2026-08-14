@@ -21,11 +21,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Shou-Tzu Han | Trustworthy AI Researcher",
   description:
-    "Research in trustworthy AI, LLM robustness, mechanistic interpretability, agentic retrieval, and human-centered AI.",
+    "Research in trustworthy AI, LLM agent safety, LLM robustness, and mechanistic interpretability.",
   authors: [{ name: "Shou-Tzu Han" }],
   keywords: [
     "Shou-Tzu Han",
     "Trustworthy AI",
+    "LLM agent safety",
     "LLM robustness",
     "mechanistic interpretability",
     "agentic retrieval",
@@ -34,14 +35,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shou-Tzu Han | Trustworthy AI Researcher",
     description:
-      "Research in LLM robustness, mechanistic interpretability, and agentic retrieval.",
+      "Research in LLM agent safety, LLM robustness, and mechanistic interpretability.",
     type: "website",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Shou-Tzu Han — Trustworthy AI, LLM Reasoning, Agentic Retrieval",
+        alt: "Shou-Tzu Han — Trustworthy AI, LLM Agent Safety, and LLM Robustness",
       },
     ],
   },
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shou-Tzu Han | Trustworthy AI Researcher",
     description:
-      "Research in LLM robustness, mechanistic interpretability, and agentic retrieval.",
+      "Research in LLM agent safety, LLM robustness, and mechanistic interpretability.",
     images: ["/og.png"],
   },
 };

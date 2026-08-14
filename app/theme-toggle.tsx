@@ -29,10 +29,18 @@ export function ThemeToggle() {
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
       suppressHydrationWarning
     >
-      <span className="theme-option" data-active={theme === "light"}>
+      <span
+        className="theme-option"
+        data-active={theme === "light"}
+        suppressHydrationWarning
+      >
         Light
       </span>
-      <span className="theme-option" data-active={theme === "dark"}>
+      <span
+        className="theme-option"
+        data-active={theme === "dark"}
+        suppressHydrationWarning
+      >
         Dark
       </span>
     </button>

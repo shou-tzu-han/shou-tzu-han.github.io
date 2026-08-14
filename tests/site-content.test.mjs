@@ -9,6 +9,8 @@ test("exports the academic profile for GitHub Pages", async () => {
 
   assert.match(html, /Shou-Tzu Han/);
   assert.match(html, /Trustworthy AI/);
+  assert.match(html, /LLM Agent Safety/);
+  assert.match(html, /Mechanistic Interpretability/i);
   assert.match(html, /Research Profile/);
   assert.match(html, /Research Interests/);
   assert.match(html, /Publications/);
@@ -18,6 +20,9 @@ test("exports the academic profile for GitHub Pages", async () => {
   assert.match(html, /Wayne State University/);
   assert.match(html, /Boston University/);
   assert.match(html, /Soochow University/);
+  assert.match(html, /Aug 2026 – Present/);
+  assert.match(html, /Sep 2021 – Sep 2023/);
+  assert.match(html, /Sep 2015 – Jun 2020/);
   assert.match(html, /Seeking a research internship/);
   assert.match(html, /github\.com\/shou-tzu-han/);
   assert.match(html, /Google Scholar/);
