@@ -2,6 +2,8 @@ import { ThemeToggle } from "./theme-toggle";
 
 const scholarUrl =
   "https://scholar.google.com/citations?user=BdT2ZvAAAAAJ&hl=en";
+const linkedInUrl =
+  "https://www.linkedin.com/in/shou-tzu-debra-h-713724200/?skipRedirect=true";
 
 const researchInterests = [
   {
@@ -209,6 +211,14 @@ export default function Home() {
                 rel="noreferrer"
               >
                 Google Scholar <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                className="button button-secondary"
+                href={linkedInUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
               </a>
               <a className="button button-secondary" href="mailto:ii1898@wayne.edu">
                 Email me
@@ -470,6 +480,9 @@ export default function Home() {
               </a>
               <a href="https://github.com/shou-tzu-han" target="_blank" rel="noreferrer">
                 GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <a href={linkedInUrl} target="_blank" rel="noreferrer">
+                LinkedIn <span aria-hidden="true">↗</span>
               </a>
               <a href="/Shou-Tzu-Han-Resume.pdf">
                 Download résumé <span aria-hidden="true">↓</span>

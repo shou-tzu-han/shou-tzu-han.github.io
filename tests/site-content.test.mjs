@@ -26,9 +26,14 @@ test("exports the academic profile for GitHub Pages", async () => {
   assert.match(html, /Seeking a research internship/);
   assert.match(html, /github\.com\/shou-tzu-han/);
   assert.match(html, /Google Scholar/);
+  assert.match(html, /linkedin\.com\/in\/shou-tzu-debra-h-713724200/);
+  assert.match(html, /LinkedIn/);
   assert.match(html, />Résumé/);
   assert.match(html, />Email</);
-  assert.match(html, /hero-actions[\s\S]*GitHub[\s\S]*Google Scholar[\s\S]*Email me/);
+  assert.match(
+    html,
+    /hero-actions[\s\S]*GitHub[\s\S]*Google Scholar[\s\S]*LinkedIn[\s\S]*Email me/,
+  );
   assert.match(html, /Switch to dark theme/);
   assert.match(html, />Light</);
   assert.match(html, />Dark</);
