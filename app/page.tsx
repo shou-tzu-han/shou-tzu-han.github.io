@@ -52,6 +52,7 @@ const publications = [
       "Narrative-Centered Emotional Reflection: An Early Prototype for AI-Supported Emotional Self-Reflection",
     authors: "Shou-Tzu Han",
     href: "https://arxiv.org/abs/2504.20342",
+    demoHref: "https://www.reflexionai.dev/demo",
     identifier: "arXiv:2504.20342",
   },
 ];
