@@ -26,6 +26,8 @@ test("exports the academic profile for GitHub Pages", async () => {
   assert.match(html, /Seeking a research internship/);
   assert.match(html, /github\.com\/shou-tzu-han/);
   assert.match(html, /Google Scholar/);
+  assert.match(html, /Live demo/);
+  assert.match(html, /debrah1-novelty-aware-research-agent\.hf\.space/);
   assert.match(html, /linkedin\.com\/in\/shou-tzu-debra-h-713724200/);
   assert.match(html, /LinkedIn/);
   assert.match(html, />Résumé/);

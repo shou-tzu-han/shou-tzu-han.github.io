@@ -435,7 +435,7 @@ nav a:focus-visible,
 
 .publication {
   display: grid;
-  grid-template-columns: 62px minmax(0, 1fr) 58px;
+  grid-template-columns: 62px minmax(0, 1fr) max-content;
   gap: 22px;
   align-items: start;
   padding: 24px 0;
@@ -481,8 +481,13 @@ nav a:focus-visible,
   font-weight: 600;
 }
 
-.paper-link {
+.publication-actions {
+  display: flex;
+  gap: 14px;
   justify-self: end;
+}
+
+.paper-link {
   color: var(--accent);
   font-size: 15px;
   font-weight: 600;
@@ -983,7 +988,7 @@ footer {
     gap: 14px;
   }
 
-  .paper-link {
+  .publication-actions {
     grid-column: 2;
     justify-self: start;
   }

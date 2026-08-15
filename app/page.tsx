@@ -43,6 +43,7 @@ const publications = [
       "Novelty-Aware Agentic Retrieval: Comparing Research Contributions Through Structured Multi-Step Reasoning",
     authors: "Shou-Tzu Han",
     href: "https://arxiv.org/abs/2606.22151",
+    demoHref: "https://debrah1-novelty-aware-research-agent.hf.space/",
     identifier: "arXiv:2606.22151",
   },
   {
@@ -305,15 +306,28 @@ export default function Home() {
                   <p className="authors">{publication.authors}</p>
                   <p className="publication-detail">Preprint · {publication.identifier}</p>
                 </div>
-                <a
-                  className="paper-link"
-                  href={publication.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`Read ${publication.title} on arXiv`}
-                >
-                  arXiv <span aria-hidden="true">↗</span>
-                </a>
+                <div className="publication-actions">
+                  <a
+                    className="paper-link"
+                    href={publication.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Read ${publication.title} on arXiv`}
+                  >
+                    arXiv <span aria-hidden="true">↗</span>
+                  </a>
+                  {publication.demoHref ? (
+                    <a
+                      className="paper-link"
+                      href={publication.demoHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open the live demo for ${publication.title}`}
+                    >
+                      Live demo <span aria-hidden="true">↗</span>
+                    </a>
+                  ) : null}
+                </div>
               </article>
             ))}
           </div>
