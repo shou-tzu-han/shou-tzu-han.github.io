@@ -351,6 +351,7 @@ export default function Home() {
               <time>2026–Present</time>
             </div>
             <div className="experience-areas">
+              {/* Temporarily hidden until this research direction is ready to publish.
               <section className="experience-area">
                 <div className="experience-area-heading">
                   <p>Research focus 01</p>
@@ -376,10 +377,11 @@ export default function Home() {
                   </li>
                 </ol>
               </section>
+              */}
 
               <section className="experience-area">
                 <div className="experience-area-heading">
-                  <p>Research focus 02</p>
+                  <p>Research focus 01</p>
                   <h4>AI-Supported Mentoring Systems</h4>
                 </div>
                 <ol className="experience-points">

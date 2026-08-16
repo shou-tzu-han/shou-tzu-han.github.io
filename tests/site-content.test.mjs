@@ -24,6 +24,8 @@ test("exports the academic profile for GitHub Pages", async () => {
   assert.match(html, /Sep 2021 – Sep 2023/);
   assert.match(html, /Sep 2015 – Jun 2020/);
   assert.match(html, /Seeking a research internship/);
+  assert.match(html, /AI-Supported Mentoring Systems/);
+  assert.doesNotMatch(html, /Research where and why LLM agent reasoning fails/);
   assert.match(html, /github\.com\/shou-tzu-han/);
   assert.match(html, /Google Scholar/);
   assert.match(html, /Live demo/);
